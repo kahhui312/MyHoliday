@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_holiday/holiday_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -101,6 +102,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return const HolidayList();
+                }))
+              },
+              child: const Text('See Holiday List'),
             ),
           ],
         ),
