@@ -18,8 +18,11 @@ class HolidayList extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Holiday List'),
         ),
-        body: ListView.builder(itemBuilder: (context, index) {
-          return Text(holidayList[index]);
-        }));
+        body: ListView.builder(
+          itemBuilder: (context, index) {
+            return Text(holidayList[index]);
+          },
+          itemCount: holidayList.length,
+        ));
   }
 }
