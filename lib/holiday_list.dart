@@ -10,7 +10,8 @@ class HolidayList extends StatelessWidget {
       'Bukit Bintang',
       'Sri Petaling',
       'Kota Damansara',
-      'One Utama'
+      'One Utama',
+      'TBS'
     ];
 
     return Scaffold(
